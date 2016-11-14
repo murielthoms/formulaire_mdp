@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.css">
+<body>
+	<div class=" fields ">
+		<h1>formulaire</h1>
+		<form class="ui form" action="/users"  method="post">
+			<div class="ui field">
+				<label for="nom">Username</label>
+				<input id="nom" type="text" name="nom" value="romuald">
+			</div>
+
+			<div class=" ui field">
+				<label for="mdp">Mot de passe</label>
+				<input id="mdp" type="password" name="mdp" value="motdepasse">
+			</div>
+		</div>
+		<div>
+			<button class="ui submit button green labeled icon" id="connect">Connexion>
+			<i class="icon send"></i>
+			</button>
+		</div>
+
+
+	</form>
+
+
+
+
+	<script src="/node_modules/jquery/dist/jquery.js"></script>
+	<script src="/app.js"></script>
+</body>
+</html>
