@@ -7,32 +7,35 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.css">
 <body>
-	<div class=" fields ">
-		<h1>formulaire</h1>
-		<form class="ui form" action="/users"  method="post">
-			<div class="ui field">
-				<label for="nom">Username</label>
-				<input id="nom" type="text" name="nom" value="romuald">
-			</div>
-
-			<div class=" ui field">
-				<label for="mdp">Mot de passe</label>
-				<input id="mdp" type="password" name="mdp" value="motdepasse">
-			</div>
+	<div class="ui attached message">
+		<div class="header">Bienvenue sur notre site! </div>
+		<span>Remplissez le formulaire ci-dessous pour vous connecter...</span>
+	</div>
+	<div class="fields ">
+		<form class="ui form attached fluid segment"
+		id="logginerror" action="/users"  method="post">
+		<div class="field">
+			<label for="nom">Username</label>
+			<input id="nom" type="text" name="nom" value="romuald">
 		</div>
-		<div>
-			<button class="ui submit button green labeled icon" id="connect">Connexion>
+
+		<div class="field">
+			<label for="mdp">Mot de passe</label>
+			<input id="mdp" type="password" name="mdp" value="motdepasse">
+		</div>
+	</div>
+	<div>
+		<button class="ui submit button green labeled icon" id="connect">Connexion>
 			<i class="icon send"></i>
-			</button>
-		</div>
+		</button>
+	</div>
+	
+</form>
 
 
-	</form>
 
 
-
-
-	<script src="/node_modules/jquery/dist/jquery.js"></script>
-	<script src="/app.js"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/app.js"></script>
 </body>
 </html>
