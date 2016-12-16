@@ -26,10 +26,10 @@ app.post('/users', function(req, res){
 
 });
 
-app.get('/', function(req, res){
-	res.send('ok');
+// app.get('/', function(req, res){
+// 	res.send('ok');
 
-});
+// });
 
 app.listen(2345, function(){
 	console.log(' ça fonctionne...ou pas!');

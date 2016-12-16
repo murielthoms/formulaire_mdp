@@ -7,7 +7,7 @@
 
 		var infos ={ 
 			mdp : $('#mdp').val(),
-			nom : $('#nom').val(),
+			nom : $('#nom').val()
 		};
 
 
